@@ -22,26 +22,39 @@ body{
     align-items: center;
     justify-content: center;
     gap: 4rem;
+    background: url(https://i.gifer.com/fetch/w300-preview/85/856de846e59271089eca26c4260c9bdb.gif);
 }
 
 .search {
+    animation: slideInFromTop 2s forwards;
     display: flex;
     width: 50%;
     max-width: 60rem;
     gap: 5px;
-    height: 50px;
+    height: 50px;   
+}
+
+.search input:disabled{
+    background-color: #f9f9f9;
+    color: #666;
+    cursor: not-allowed;
 }
 
 .search input{
     padding: 0.5rem 1rem;
     width: 100%;
     border-radius: 5px;
-    color: rgb(15, 15, 15);
     font-size: 2rem;
+    border: 1px solid #ccc;
+}
+
+.search input:hover{
+    border-color: #999;
 }
 
 .search input:focus-visible{
-    outline: 1px solid grey;
+    border-color: #3f3e3e;
+    box-shadow: 2px 2px 5px rgba(68, 68, 68, 0.5);
 }
 
 .primary-btn {
@@ -60,6 +73,28 @@ body{
     border: solid 1px black;
 }
 
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes slideInFromBottom {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
 .primary-btn:active{
     background: rgba(231, 59, 231, 0.788);
 }
@@ -69,6 +104,7 @@ body{
 }
 
 .profile-box{
+    animation: slideInFromTop 2s forwards;
     margin: auto;
     padding: 4rem 2rem;
     width: 90%;
@@ -76,6 +112,7 @@ body{
     box-shadow: 0 0 1rem rgba(1, 2, 10, 50);
     transition: 0.5s ease-in;
     background: linear-gradient(129deg, #676769, #1f1e1e, #1d1d1f);
+    backdrop-filter: blur(10px);
     border-radius: 10px;
 }
 
@@ -145,6 +182,7 @@ body{
 
 .headerFile{
     display: flex;
+    animation: slideInFromTop 2s forwards;
 }
 
 .headerFile img{
