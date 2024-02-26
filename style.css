@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    font-family: "Poppins", sans-serif;
+    font-size: 62%;
+}
+
+body{
+    font-size: 1.6rem;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.search {
+    display: flex;
+    width: 50%;
+    max-width: 60rem;
+    gap: 5px;
+    height: 50px;
+}
+
+.search input{
+    padding: 0.5rem 1rem;
+    width: 100%;
+    border-radius: 5px;
+    color: rgb(15, 15, 15);
+    font-size: 2rem;
+}
+
+.search input:focus-visible{
+    outline: 1px solid grey;
+}
+
+.primary-btn {
+    background: rgb(0, 0, 0);
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 10px;
+}
+
+.primary-btn:hover{
+    background: rgba(255, 255, 255, 0.788);
+    color: black;
+    transition: 0.3s;
+    cursor: pointer;
+    border: solid 1px black;
+}
+
+.primary-btn:active{
+    background: rgba(231, 59, 231, 0.788);
+}
+
+#profileContainer {
+    width: 100%;
+}
+
+.profile-box{
+    margin: auto;
+    padding: 4rem 2rem;
+    width: 90%;
+    max-width: 78rem;
+    box-shadow: 0 0 1rem rgba(1, 2, 10, 50);
+    transition: 0.5s ease-in;
+    background: linear-gradient(129deg, #676769, #1f1e1e, #1d1d1f);
+    border-radius: 10px;
+}
+
+.profile-box:hover {
+    transition: 0.5s ease-out forwards;
+}
+
+.top-section{
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-section button{
+    align-self: center;
+}
+
+.left{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.left h1{
+    font-size: 2rem;
+    color: rgba(255, 255, 255, 0.829);
+}
+
+.avatar{
+    height: 10rem;
+    width: 10rem;
+}
+
+.avatar img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.about {
+    margin: 2rem;
+    color: rgb(255, 255, 255);
+}
+
+.status {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+}
+
+.status-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.status-item h3{
+    color: rgba(255, 255, 255, 0.842);
+}
+
+.status-item p{
+    color: rgba(136, 136, 136, 0.685);
+}
+
+.Header{
+    color: rgb(0, 0, 0);
+    padding-right: 20px;
+}
+
+.headerFile{
+    display: flex;
+}
+
+.headerFile img{
+    padding-left: 10px;
+    margin-top: -10px;
+    width: 70px;
+    height: 70px;
+}
