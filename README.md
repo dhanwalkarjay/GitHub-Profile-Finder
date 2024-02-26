@@ -2,6 +2,8 @@
 
 Welcome to GitHub User Finder! This project allows you to search for GitHub users using the GitHub Users API. It's built using HTML, CSS, and JavaScript.
 
+![Alt Text](url_to_your_image)
+
 ## Usage
 
 To use this project, simply open the `index.html` file in your web browser. Once the page loads, you can enter a GitHub username into the search bar and hit enter or click the search button. The application will fetch information about the user from the GitHub API and display it on the page.
