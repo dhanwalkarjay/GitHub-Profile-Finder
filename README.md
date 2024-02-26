@@ -2,7 +2,7 @@
 
 Welcome to GitHub User Finder! This project allows you to search for GitHub users using the GitHub Users API. It's built using HTML, CSS, and JavaScript.
 
-![Alt Text](url_to_your_image)
+![Alt Text](assets/HomePage'.png)
 
 ## Usage
 
@@ -22,5 +22,8 @@ The project utilizes the Fetch API to make requests to the GitHub Users API. Whe
 ## Contributing
 
 Contributions are welcome! If you find any issues or have suggestions for improvements, please feel free to open an issue or submit a pull request.
+
+##Live Link
+https://dhanwalkarjay.github.io/GitHub-Profile-Finder/
 
 Happy coding! 🚀
